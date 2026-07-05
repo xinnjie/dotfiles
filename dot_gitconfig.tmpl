@@ -1,0 +1,24 @@
+[user]
+	name = xinnjie
+	email = xinnjie31@gmail.com
+[credential]
+	helper = store
+[core]
+	autocrlf = input
+	excludesfile = /Users/xinnjie/.gitignore_global
+[diff]
+	tool = fork
+[difftool "fork"]
+	cmd = fork open
+[merge]
+	tool = fork
+[mergetool "fork"]
+	cmd = fork open
+	trustExitCode = false
+[pull]
+	rebase = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

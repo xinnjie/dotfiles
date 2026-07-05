@@ -1,0 +1,6 @@
+alias loginxs 'ssh ubuntu@118.195.187.82'
+alias logins 'ssh ubuntu@124.223.31.46'
+alias loginhwxs 'ssh root@124.70.211.206'
+alias loginhws 'ssh root@60.204.240.175'
+alias logindev 'xinnjie@192.168.2.231'
+alias vim 'nvim'

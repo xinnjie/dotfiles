@@ -1,0 +1,143 @@
+[
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-down": "editor::SelectSmallerSyntaxNode",
+      "alt-f7": "editor::FindAllReferences",
+      "alt-j": "editor::SelectNext",
+      "alt-left": "editor::MoveToPreviousWordStart",
+      "alt-right": "editor::MoveToNextWordEnd",
+      "cmd-g": "search::SelectNextMatch",
+      "cmd-shift-g": "search::SelectPreviousMatch",
+      "cmd-x": "editor::Cut",
+      "ctrl--": "editor::Fold",
+      "ctrl-.": "editor::ToggleFold",
+      "ctrl-/": "editor::ToggleComments",
+      "ctrl-=": "editor::UnfoldLines",
+      "ctrl-alt--": "editor::FoldRecursive",
+      "ctrl-alt-=": "editor::UnfoldRecursive",
+      "ctrl-alt-b": "editor::GoToImplementation",
+      "ctrl-alt-down": "editor::AddSelectionBelow",
+      "ctrl-alt-enter": "editor::NewlineAbove",
+      "ctrl-alt-k": "git::Commit",
+      "ctrl-alt-l": "editor::Format",
+      "ctrl-alt-numpad_add": "editor::UnfoldRecursive",
+      "ctrl-alt-numpad_subtract": "editor::FoldRecursive",
+      "ctrl-alt-o": "outline::Toggle",
+      "ctrl-alt-up": "editor::AddSelectionAbove",
+      "ctrl-alt-z": "git::Restore",
+      "ctrl-b": "editor::GoToDeclaration",
+      "ctrl-backspace": "editor::DeleteToPreviousWordStart",
+      "ctrl-d": "editor::DuplicateLineDown",
+      "ctrl-delete": "editor::DeleteToNextWordEnd",
+      "ctrl-down": "editor::GoToDeclaration",
+      "ctrl-end": "editor::MoveToEnd",
+      "ctrl-enter": "editor::Newline",
+      "ctrl-f": "buffer_search::Deploy",
+      "ctrl-f12": "outline::Toggle",
+      "ctrl-f8": "editor::ToggleBreakpoint",
+      "ctrl-g": "search::SelectNextMatch",
+      "ctrl-home": "editor::MoveToBeginning",
+      "ctrl-j": "editor::Hover",
+      "ctrl-l": "go_to_line::Toggle",
+      "ctrl-m": "editor::MoveToEnclosingBracket",
+      "ctrl-numpad_add": "editor::UnfoldLines",
+      "ctrl-numpad_divide": "editor::ToggleComments",
+      "ctrl-numpad_subtract": "editor::Fold",
+      "ctrl-p": "editor::ShowSignatureHelp",
+      "ctrl-r": "buffer_search::DeployReplace",
+      "ctrl-shift--": "editor::FoldAll",
+      "ctrl-shift-=": "editor::UnfoldAll",
+      "ctrl-shift-alt-j": "editor::SelectAllMatches",
+      "ctrl-shift-alt-l": "editor::FormatSelections",
+      "ctrl-shift-b": "editor::GoToTypeDefinition",
+      "ctrl-shift-down": "editor::MoveLineDown",
+      "ctrl-shift-enter": "editor::NewlineBelow",
+      "ctrl-shift-g": "search::SelectPreviousMatch",
+      "ctrl-shift-j": "editor::JoinLines",
+      "ctrl-shift-k": "git::Push",
+      "ctrl-shift-left": "editor::SelectToPreviousSubwordStart",
+      "ctrl-shift-numpad_add": "editor::UnfoldAll",
+      "ctrl-shift-numpad_subtract": "editor::FoldAll",
+      "ctrl-shift-up": "editor::MoveLineUp",
+      "ctrl-t": "git::Pull",
+      "ctrl-w": "pane::CloseActiveItem",
+      "ctrl-x": "editor::Cut",
+      "ctrl-y": "editor::GoToDefinitionSplit",
+      "f1": "editor::Hover",
+      "f4": "editor::GoToDeclaration",
+      "shift-alt-down": "editor::MoveLineDown",
+      "shift-alt-j": "editor::UndoSelection",
+      "shift-alt-left": "editor::SelectToPreviousWordStart",
+      "shift-alt-right": "editor::SelectToNextWordEnd",
+      "shift-alt-up": "editor::MoveLineUp",
+      "shift-delete": "editor::Cut",
+      "shift-enter": "editor::NewlineBelow",
+      "shift-f6": "editor::Rename"
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "cmd-x": "project_panel::Cut",
+      "ctrl-shift-d": "project_panel::CompareMarkedFiles",
+      "ctrl-x": "project_panel::Cut",
+      "shift-delete": "project_panel::Cut"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-0": "diagnostics::Deploy",
+      "alt-1": "project_panel::ToggleFocus",
+      "alt-2": "workspace::ToggleRightDock",
+      "alt-3": "project_search::ToggleFocus",
+      "alt-5": "debug_panel::ToggleFocus",
+      "alt-9": "git_panel::ToggleFocus",
+      "alt-f12": "terminal_panel::ToggleFocus",
+      "alt-f9": "debugger::RunToCursor",
+      "alt-insert": "workspace::NewFile",
+      "alt-numpad1": "project_panel::ToggleFocus",
+      "alt-numpad3": "project_search::ToggleFocus",
+      "alt-numpad5": "debug_panel::ToggleFocus",
+      "alt-numpad9": "git_panel::ToggleFocus",
+      "ctrl-`": "terminal_panel::ToggleFocus",
+      "ctrl-e": "file_finder::Toggle",
+      "ctrl-o": "project_symbols::Toggle",
+      "ctrl-s": "workspace::SaveAll",
+      "ctrl-shift-]": "tab_switcher::Toggle",
+      "ctrl-shift-f": "pane::DeploySearch",
+      "ctrl-shift-o": "file_finder::Toggle",
+      "ctrl-shift-r": [
+        "pane::DeploySearch",
+        {
+          "replace_enabled": true
+        }
+      ],
+      "ctrl-tab": [
+        "tab_switcher::Toggle",
+        {
+          "select_last": true
+        }
+      ],
+      "f7": "debugger::StepInto",
+      "f8": "debugger::StepOver",
+      "f9": "debugger::Continue",
+      "shift shift": "file_finder::Toggle",
+      "shift-alt-9": "git_panel::ToggleFocus",
+      "shift-escape": "workspace::ToggleBottomDock",
+      "shift-f8": "debugger::StepOut"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-[": "pane::GoBack",
+      "ctrl-]": "pane::GoForward",
+      "ctrl-alt-left": "pane::GoBack",
+      "ctrl-alt-right": "pane::GoForward",
+      "ctrl-f2": "debugger::Stop",
+      "ctrl-shift-a": "command_palette::Toggle",
+      "ctrl-shift-c": "workspace::CopyPath"
+    }
+  }
+]
