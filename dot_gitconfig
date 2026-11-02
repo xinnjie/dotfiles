@@ -1,17 +1,17 @@
 [user]
 	name = xinnjie
 	email = xinnjie31@gmail.com
-[credential]
-	helper = store
 [core]
 	autocrlf = input
 	excludesfile = /Users/xinnjie/.gitignore_global
+	pager = delta
 [diff]
 	tool = fork
 [difftool "fork"]
 	cmd = fork open
 [merge]
 	tool = fork
+	conflictStyle = zdiff3
 [mergetool "fork"]
 	cmd = fork open
 	trustExitCode = false
@@ -22,3 +22,11 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[push]
+	autoSetupRemote = true
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+[credential]
+	helper = osxkeychain
