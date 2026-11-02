@@ -1,0 +1,3 @@
+# vim-plug 管理的插件目录：由 vim-plug 自己 clone/更新，不纳入 chezmoi 管理。
+# 否则每次插件更新后 .git/index 等文件都会让 `chezmoi status` 变脏。
+.config/nvim/plugged/**
